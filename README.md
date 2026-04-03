@@ -30,3 +30,24 @@ Rating range: 1.0 – 5.0 (mean: ~4.1)
 
 ALS is a matrix factorization algorithm for collaborative filtering. It decomposes the user-item ratings matrix into two lower-rank matrices (user factors and item factors), learning latent preferences from observed ratings.
 
+**🚀 How to Run**
+Prerequisites
+
+  1. AWS account with EMR and S3 access
+  2. An S3 bucket containing Video_Games.jsonl
+
+Steps
+
+  1. Launch an EMR cluster with JupyterHub or EMR Studio (PySpark kernel)
+  2. Upload FinalProject.ipynb to your EMR Studio workspace
+  3. Update S3 paths in the notebook:
+     S3_INPUT_PATH = "s3://YOUR-BUCKET-NAME/Video_Games.jsonl"
+     S3_OUTPUT_PATH = "s3://YOUR-BUCKET-NAME/output/"
+  5. Run all cells top to bottom
+
+Output
+
+Results are saved to S3:
+
+1. output/user_recommendations/ — Top-10 game recs per user (Parquet)
+2. output/test_predictions/ — Predicted ratings on test set (Parquet)
