@@ -1,14 +1,14 @@
-**🎮 Video Game Recommender — PySpark ALS on AWS EMR**
+*🎮 Video Game Recommender — PySpark ALS on AWS EMR**
 
 A collaborative filtering recommendation system built with PySpark MLlib and deployed on AWS EMR. Trained on 4.6 million Amazon Video Games reviews to generate personalized Top-N game recommendations for users.
 
-📌 Overview
+**📌 Overview**
 
 With millions of video games available across platforms, discovering new games that match a user's taste is a real challenge. This project tackles that using Alternating Least Squares (ALS) — a matrix factorization technique that learns latent preferences from historical user-item ratings.
 
 The full pipeline runs on AWS EMR (Elastic MapReduce), reading data from S3, processing it with PySpark, and writing recommendations back to S3.
 
-🗂️ Dataset
+**🗂️ Dataset**
 
 Source: Amazon Product Reviews — Video Games category (JSONL format)
 
@@ -26,4 +26,7 @@ Unique items: 59,042
 
 Rating range: 1.0 – 5.0 (mean: ~4.1)
 
+**🤖 Model — ALS (Alternating Least Squares)**
+
+ALS is a matrix factorization algorithm for collaborative filtering. It decomposes the user-item ratings matrix into two lower-rank matrices (user factors and item factors), learning latent preferences from observed ratings.
 
