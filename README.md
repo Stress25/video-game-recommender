@@ -1,4 +1,5 @@
 🎮 Video Game Recommender — PySpark ALS on AWS EMR
+
 A collaborative filtering recommendation system built with PySpark MLlib and deployed on AWS EMR. Trained on 4.6 million Amazon Video Games reviews to generate personalized Top-N game recommendations for users.
 
 📌 Overview
