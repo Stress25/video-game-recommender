@@ -41,8 +41,11 @@ Steps
   1. Launch an EMR cluster with JupyterHub or EMR Studio (PySpark kernel)
   2. Upload FinalProject.ipynb to your EMR Studio workspace
   3. Update S3 paths in the notebook:
+     
      S3_INPUT_PATH = "s3://YOUR-BUCKET-NAME/Video_Games.jsonl"
+     
      S3_OUTPUT_PATH = "s3://YOUR-BUCKET-NAME/output/"
+     
   5. Run all cells top to bottom
 
 Output
